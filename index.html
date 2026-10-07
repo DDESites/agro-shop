@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agro Shop — Pet shop e agropecuária em Águas Lindas</title>
+  <meta name="description" content="Tudo para seu pet, pertinho de você. Ração, petiscos, higiene, acessórios e itens agropecuários em Águas Lindas. Faça seu pedido pelo WhatsApp.">
+  <meta property="og:title" content="Agro Shop — Pet shop em Águas Lindas">
+  <meta property="og:description" content="Ração, petiscos e acessórios com atendimento próximo. Peça pelo WhatsApp.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Nunito:wght@800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="marca" href="index.html">
+        <span class="marca__selo" aria-hidden="true">🐾</span>
+        <span class="marca__nome">Agro Shop<span>Pet shop · Águas Lindas</span></span>
+      </a>
+
+      <nav class="nav-principal" id="nav-principal" aria-label="Navegação principal">
+        <a href="index.html" aria-current="page">Início</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="ofertas.html">Ofertas</a>
+        <a href="sobre.html">Sobre a loja</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+
+      <div class="header-acoes">
+        <a class="btn btn--zap btn--pequeno" data-zap="Olá! Vim pelo site da Agro Shop e gostaria de fazer um pedido."
+           href="#" aria-label="Pedir pelo WhatsApp">📲 Pedir pelo WhatsApp</a>
+        <button class="btn-menu" id="btn-menu" aria-expanded="false" aria-controls="nav-principal" aria-label="Abrir menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__conteudo">
+          <span class="hero__selo">🐾 Temos promoção esperando por você!!</span>
+          <h1>Tudo para seu pet,<span class="linha-clara">pertinho de você.</span></h1>
+          <p class="hero__sub">
+            Ração, petiscos, higiene, acessórios e itens agropecuários.
+            Veja as ofertas e faça seu pedido pelo WhatsApp — a gente confirma
+            tudo para você.
+          </p>
+          <div class="hero__acoes">
+            <a class="btn btn--zap" data-zap="Olá! Vim pelo site da Agro Shop e gostaria de ver as ofertas."
+               href="#">Faça seu pedido!!</a>
+            <a class="btn btn--contorno-claro" href="produtos.html">Ver produtos</a>
+          </div>
+          <ul class="hero__chips">
+            <li><span class="icone" aria-hidden="true">📍</span> Atendimento em Águas Lindas</li>
+            <li><span class="icone" aria-hidden="true">🚚</span> Entrega local — consulte condições</li>
+            <li><span class="icone" aria-hidden="true">📱</span> (61) 99256-2161</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categorias -->
+    <section class="secao secao--clara">
+      <div class="container">
+        <div class="cabecalho-secao cabecalho-secao--centro">
+          <span class="acento">Navegue por categoria</span>
+          <h2>O que você procura hoje?</h2>
+          <p>Escolha uma categoria e encontre o produto certinho para o seu pet ou para sua casa.</p>
+        </div>
+        <div class="grade-categorias" id="grade-categorias"></div>
+      </div>
+    </section>
+
+    <!-- Ofertas da semana -->
+    <section class="secao">
+      <div class="container">
+        <div class="cabecalho-secao">
+          <span class="acento">Ofertas da semana</span>
+          <h2>Temos promoção esperando por você!!</h2>
+          <p>Confira os produtos em destaque. Preços e disponibilidade são confirmados pela equipe no WhatsApp.</p>
+        </div>
+
+        <div class="grade-produtos" id="grade-produtos" data-tipo="ofertas" data-limite="4"></div>
+
+        <p style="text-align:center; margin-top:2.25rem;">
+          <a class="btn btn--contorno-teal" href="ofertas.html">Ver todas as ofertas</a>
+        </p>
+
+        <div class="nota-legal">
+          ⚠️ Preços e condições de entrega estão sujeitos a confirmação no momento do pedido.
+          Consulte disponibilidade pelo WhatsApp antes de vir até a loja.
+        </div>
+      </div>
+    </section>
+
+    <!-- Vantagens -->
+    <section class="secao secao--clara">
+      <div class="container">
+        <div class="cabecalho-secao cabecalho-secao--centro">
+          <span class="acento">Por que a Agro Shop?</span>
+          <h2>Variedade, proximidade e rapidez</h2>
+        </div>
+        <div class="grade-vantagens">
+          <div class="card-vantagem">
+            <span class="card-vantagem__icone" aria-hidden="true">📍</span>
+            <h3>Atendimento local</h3>
+            <p>Equipe pronta para te atender em Águas Lindas, com a conversa direta e sem enrolação.</p>
+          </div>
+          <div class="card-vantagem">
+            <span class="card-vantagem__icone" aria-hidden="true">🚚</span>
+            <h3>Entrega nas proximidades</h3>
+            <p>Consulte a área atendida, o pedido mínimo e o prazo pelo WhatsApp. <span class="a-confirmar">Condições a confirmar</span></p>
+          </div>
+          <div class="card-vantagem">
+            <span class="card-vantagem__icone" aria-hidden="true">🐾</span>
+            <h3>Variedade de produtos</h3>
+            <p>Do ração ao item agropecuário: tudo em um lugar só, com preço combinado na hora.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Faixa de contato -->
+    <section class="secao">
+      <div class="container">
+        <div class="painel-contato">
+          <div>
+            <h2>Faça seu pedido!!</h2>
+            <p>
+              Chame no WhatsApp que a gente confirma produto, preço e entrega.
+              Também pode ligar ou nos encontrar no Instagram.
+            </p>
+            <a class="btn btn--zap" data-zap="Olá! Vim pelo site da Agro Shop e quero fazer um pedido."
+               href="#">📲 Pedir pelo WhatsApp</a>
+          </div>
+          <ul class="contato-lista">
+            <li>
+              <span class="icone" aria-hidden="true">📱</span>
+              <span>
+                <span class="rotulo">WhatsApp e telefone</span>
+                <a href="tel:+5561992562161">(61) 99256-2161</a>
+              </span>
+            </li>
+            <li>
+              <span class="icone" aria-hidden="true">🕐</span>
+              <span>
+                <span class="rotulo">Atendimento</span>
+                <span class="valor">Horários a confirmar <span class="a-confirmar">a confirmar</span></span>
+              </span>
+            </li>
+            <li>
+              <span class="icone" aria-hidden="true">📷</span>
+              <span>
+                <span class="rotulo">Instagram</span>
+                <a href="https://instagram.com/agroshop_aguaslindas" target="_blank" rel="noopener">@agroshop_aguaslindas</a>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grade">
+        <div>
+          <div class="footer-marca">
+            <span class="marca__selo" aria-hidden="true">🐾</span>
+            <span class="marca__nome">Aqui na Agro Shop</span>
+          </div>
+          <p>Pet shop e agropecuária com atendimento próximo em Águas Lindas.</p>
+        </div>
+        <div>
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="ofertas.html">Ofertas</a></li>
+            <li><a href="sobre.html">Sobre a loja</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Categorias</h4>
+          <ul>
+            <li><a href="produtos.html?categoria=Ração">Ração</a></li>
+            <li><a href="produtos.html?categoria=Petiscos">Petiscos</a></li>
+            <li><a href="produtos.html?categoria=Higiene">Higiene</a></li>
+            <li><a href="produtos.html?categoria=Acessórios">Acessórios</a></li>
+            <li><a href="produtos.html?categoria=Agropecuária">Agropecuária</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contato</h4>
+          <ul>
+            <li>📱 <a href="tel:+5561992562161">(61) 99256-2161</a></li>
+            <li>📷 <a href="https://instagram.com/agroshop_aguaslindas" target="_blank" rel="noopener">@agroshop_aguaslindas</a></li>
+            <li>📍 Águas Lindas — GO/DF <span class="a-confirmar">endereço a confirmar</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-obs">
+        <span>© <span id="ano">2026</span> Agro Shop. Todos os direitos reservados.</span>
+        <span>Estoque, preço e entrega são confirmados pelo atendimento.</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="zap-flutuante" data-zap="Olá! Vim pelo site da Agro Shop."
+     href="#" aria-label="Falar no WhatsApp">💬</a>
+
+  <script src="js/produtos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

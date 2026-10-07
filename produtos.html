@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos — Agro Shop | Pet shop em Águas Lindas</title>
+  <meta name="description" content="Catálogo da Agro Shop: ração, petiscos, higiene, acessórios e itens agropecuários. Encontre pelo nome e peça pelo WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Nunito:wght@800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="marca" href="index.html">
+        <span class="marca__selo" aria-hidden="true">🐾</span>
+        <span class="marca__nome">Agro Shop<span>Pet shop · Águas Lindas</span></span>
+      </a>
+      <nav class="nav-principal" id="nav-principal" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="produtos.html" aria-current="page">Produtos</a>
+        <a href="ofertas.html">Ofertas</a>
+        <a href="sobre.html">Sobre a loja</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <div class="header-acoes">
+        <a class="btn btn--zap btn--pequeno" data-zap="Olá! Vim pelo site da Agro Shop e gostaria de fazer um pedido."
+           href="#" aria-label="Pedir pelo WhatsApp">📲 Pedir pelo WhatsApp</a>
+        <button class="btn-menu" id="btn-menu" aria-expanded="false" aria-controls="nav-principal" aria-label="Abrir menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero hero--compacto">
+      <div class="container">
+        <div class="hero__conteudo">
+          <span class="hero__selo">🐾 Catálogo</span>
+          <h1>Nossos produtos</h1>
+          <p class="hero__sub">
+            Busque pelo nome ou filtre por categoria e espécie.
+            Encontrou? Toque em “Pedir pelo WhatsApp” e a gente confirma tudo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="container">
+        <div class="barra-busca">
+          <div class="campo-busca">
+            <label class="rotulo-oculto" for="busca" style="position:absolute;left:-9999px;">Buscar produto</label>
+            <input type="search" id="busca" placeholder="Buscar por nome, ex.: ração, areia, coleira…" autocomplete="off">
+          </div>
+        </div>
+
+        <div class="filtros" role="group" aria-label="Filtrar por categoria">
+          <button class="filtro" data-grupo="categoria" data-valor="todos" aria-pressed="true">Todas</button>
+          <button class="filtro" data-grupo="categoria" data-valor="Ração" aria-pressed="false">Ração</button>
+          <button class="filtro" data-grupo="categoria" data-valor="Petiscos" aria-pressed="false">Petiscos</button>
+          <button class="filtro" data-grupo="categoria" data-valor="Higiene" aria-pressed="false">Higiene</button>
+          <button class="filtro" data-grupo="categoria" data-valor="Acessórios" aria-pressed="false">Acessórios</button>
+          <button class="filtro" data-grupo="categoria" data-valor="Agropecuária" aria-pressed="false">Agropecuária</button>
+        </div>
+
+        <div class="filtros" role="group" aria-label="Filtrar por espécie">
+          <button class="filtro" data-grupo="especie" data-valor="todas" aria-pressed="true">Todos animais</button>
+          <button class="filtro" data-grupo="especie" data-valor="cao" aria-pressed="false">🐕 Cães</button>
+          <button class="filtro" data-grupo="especie" data-valor="gato" aria-pressed="false">🐈 Gatos</button>
+          <button class="filtro" data-grupo="especie" data-valor="agro" aria-pressed="false">🌾 Agro</button>
+        </div>
+
+        <p class="contador-resultados" id="contador" aria-live="polite">Carregando produtos…</p>
+
+        <div class="grade-produtos" id="grade-produtos" data-tipo="todos"></div>
+
+        <div class="nota-legal">
+          ⚠️ Os valores exibidos são referência. Estoque, preço final e condições de entrega
+          são confirmados pela equipe no momento do pedido.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grade">
+        <div>
+          <div class="footer-marca">
+            <span class="marca__selo" aria-hidden="true">🐾</span>
+            <span class="marca__nome">Aqui na Agro Shop</span>
+          </div>
+          <p>Pet shop e agropecuária com atendimento próximo em Águas Lindas.</p>
+        </div>
+        <div>
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="ofertas.html">Ofertas</a></li>
+            <li><a href="sobre.html">Sobre a loja</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Categorias</h4>
+          <ul>
+            <li><a href="produtos.html?categoria=Ração">Ração</a></li>
+            <li><a href="produtos.html?categoria=Petiscos">Petiscos</a></li>
+            <li><a href="produtos.html?categoria=Higiene">Higiene</a></li>
+            <li><a href="produtos.html?categoria=Acessórios">Acessórios</a></li>
+            <li><a href="produtos.html?categoria=Agropecuária">Agropecuária</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contato</h4>
+          <ul>
+            <li>📱 <a href="tel:+5561992562161">(61) 99256-2161</a></li>
+            <li>📷 <a href="https://instagram.com/agroshop_aguaslindas" target="_blank" rel="noopener">@agroshop_aguaslindas</a></li>
+            <li>📍 Águas Lindas — GO/DF <span class="a-confirmar">endereço a confirmar</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-obs">
+        <span>© <span id="ano">2026</span> Agro Shop. Todos os direitos reservados.</span>
+        <span>Estoque, preço e entrega são confirmados pelo atendimento.</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="zap-flutuante" data-zap="Olá! Vim pelo site da Agro Shop." href="#" aria-label="Falar no WhatsApp">💬</a>
+
+  <script src="js/produtos.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Pré-seleciona categoria vinda da home (produtos.html?categoria=Ração)
+    document.addEventListener("DOMContentLoaded", () => {
+      const categoria = new URLSearchParams(location.search).get("categoria");
+      if (!categoria) return;
+      const botao = document.querySelector(`.filtro[data-valor="${CSS.escape(categoria)}"]`);
+      if (botao) botao.click();
+    });
+  </script>
+</body>
+</html>
